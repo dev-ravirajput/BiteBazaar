@@ -9,7 +9,10 @@
   <ul class="menu-inner py-1">
     <!-- Dashboards -->
     <li class="menu-item {{ request()->is('dashboard') ? 'active' : '' }}">
-      <a class="menu-link" href="{{ route('dashboard') }}" wire:navigate>{{ __('Dashboard') }}</a>
+      <a class="menu-link" href="{{ route('dashboard') }}" wire:navigate>
+        <i class="menu-icon tf-icons bx bx-home-circle"></i>
+        {{ __('Dashboard') }}
+      </a>
     </li>
 
     <!-- Settings -->
@@ -24,6 +27,12 @@
         </li>
         <li class="menu-item {{ request()->routeIs('settings.password') ? 'active' : '' }}">
           <a class="menu-link" href="{{ route('settings.password') }}" wire:navigate>{{ __('Password') }}</a>
+        </li>
+        <li class="menu-item {{ request()->routeIs('settings.notifications') ? 'active' : '' }}">
+          <a class="menu-link" href="" wire:navigate>{{ __('Notifications') }}</a>
+        </li>
+        <li class="menu-item {{ request()->routeIs('settings.privacy') ? 'active' : '' }}">
+          <a class="menu-link" href="" wire:navigate>{{ __('Privacy') }}</a>
         </li>
       </ul>
     </li>

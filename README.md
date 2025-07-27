@@ -48,23 +48,13 @@ bitebazaar/
    ```bash
    git clone https://github.com/your-username/bitebazaar.git
    cd bitebazaar
-
-
-composer install
-npm install
-
-
-cp .env.example .env
-php artisan key:generate
-
-php artisan migrate --seed
-
-
-npm run dev
-
-php artisan serve
-
-
+   composer install
+    npm install
+    cp .env.example .env
+    php artisan key:generate
+    php artisan migrate --seed
+    npm run dev
+    php artisan serve
 
 ---
 

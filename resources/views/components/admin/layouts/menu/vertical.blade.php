@@ -1,7 +1,7 @@
 <!-- Menu -->
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
   <div class="app-brand demo">
-    <a href="{{ url('/') }}" class="app-brand-link"><x-app-logo /></a>
+    <a href="{{ url('/') }}" class="app-brand-link"><x-admin.app-logo /></a>
   </div>
 
   <div class="menu-inner-shadow"></div>
@@ -9,7 +9,7 @@
   <ul class="menu-inner py-1">
     <!-- Dashboards -->
     <li class="menu-item {{ request()->is('dashboard') ? 'active' : '' }}">
-      <a class="menu-link" href="{{ route('dashboard') }}" wire:navigate>
+      <a class="menu-link" href="{{ route('admin.dashboard') }}" wire:navigate>
         <i class="menu-icon tf-icons bx bx-home-circle"></i>
         {{ __('Dashboard') }}
       </a>

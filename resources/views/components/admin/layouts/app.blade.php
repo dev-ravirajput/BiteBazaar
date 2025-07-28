@@ -10,13 +10,13 @@
       <div class="layout-container">
 
         <!-- Layout Content -->
-        <x-layouts.menu.vertical :title="$title ?? null"></x-layouts.menu.vertical>
+        <x-admin.layouts.menu.vertical :title="$title ?? null"></x-admin.layouts.menu.vertical>
         <!--/ Layout Content -->
 
         <!-- Layout container -->
         <div class="layout-page">
           <!-- Navbar -->
-          <x-layouts.navbar.default :title="$title ?? null"></x-layouts.navbar.default>
+          <x-admin.layouts.navbar.default :title="$title ?? null"></x-admin.layouts.navbar.default>
           <!--/ Navbar -->
 
           <!-- Content wrapper -->
@@ -28,7 +28,7 @@
             <!-- / Content -->
 
             <!-- Footer -->
-            <x-layouts.footer.default :title="$title ?? null"></x-layouts.footer.default>
+            <x-admin.layouts.footer.default :title="$title ?? null"></x-admin.layouts.footer.default>
             <!--/ Footer -->
             <div class="content-backdrop fade"></div>
             <!-- / Content wrapper -->

@@ -5,7 +5,7 @@ use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Layout;
 use Livewire\Volt\Component;
 
-new #[Layout('components.layouts.auth')] class extends Component {
+new #[Layout('components.admin.layouts.auth')] class extends Component {
     public string $password = '';
 
     /**
@@ -77,7 +77,7 @@ new #[Layout('components.layouts.auth')] class extends Component {
     </form>
 
     <div class="text-center">
-        <a href="{{ route('dashboard') }}" class="d-flex justify-content-center" wire:navigate>
+        <a href="{{ route('admin.dashboard') }}" class="d-flex justify-content-center" wire:navigate>
             <i class="bx bx-chevron-left scaleX-n1-rtl me-1"></i>
             {{ __('Back to dashboard') }}
         </a>

@@ -73,7 +73,7 @@ new class extends Component {
 <section>
     @include('partials.settings-heading')
 
-    <x-settings.layout :subheading="__('Update your name and email address')">
+    <x-admin.settings.layout :subheading="__('Update your name and email address')">
         <form wire:submit="updateProfileInformation" class="mb-6 w-50">
             <div class="mb-4">
                 <label for="name" class="form-label">{{ __('Name') }}</label>
@@ -112,5 +112,5 @@ new class extends Component {
         </form>
 
         <livewire:settings.delete-user-form />
-    </x-settings.layout>
+    </x-admin.settings.layout>
 </section>

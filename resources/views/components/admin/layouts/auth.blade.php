@@ -6,9 +6,9 @@
 
   <body>
 
-    <x-layouts.auth.split>
+    <x-admin.layouts.auth.split>
       {{ $slot }}
-    </x-layouts.auth.split>
+    </x-admin.layouts.auth.split>
 
     <!-- Include Scripts -->
     @include('partials.scripts')
